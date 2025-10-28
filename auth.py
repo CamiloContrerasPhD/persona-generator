@@ -166,10 +166,10 @@ def show_login_form():
                 st.error("Por favor completa todos los campos")
         
         # Mostrar usuarios disponibles (sin contraseñas)
-        st.markdown("---")
-        st.markdown("**👥 Usuarios disponibles:**")
-        st.markdown("📧 admin@test.com")
-        st.markdown("📧 usuario@test.com")
+        # st.markdown("---")
+        # st.markdown("**👥 Usuarios disponibles:**")
+        # st.markdown("📧 ")
+        # st.markdown("📧 ")
 
 
 def logout():
@@ -185,20 +185,20 @@ def show_admin_panel():
         return
     
     st.sidebar.markdown("---")
-    st.sidebar.subheader("👥 Usuarios del Sistema")
+    # st.sidebar.subheader("👥 Usuarios del Sistema")
     
-    auth = ExcelAuth()
-    users_df = auth.get_all_users()
+    # auth = ExcelAuth()
+    # users_df = auth.get_all_users()
     
-    if not users_df.empty:
-        st.sidebar.markdown("**Usuarios disponibles:**")
-        for _, user in users_df.iterrows():
-            email = user['email']
-            created = user['created_at'][:10] if user['created_at'] and str(user['created_at']) != 'nan' else 'N/A'
-            last_login = user['last_login'][:10] if user['last_login'] and str(user['last_login']) != 'nan' else 'Nunca'
+    # if not users_df.empty:
+    #     st.sidebar.markdown("**Usuarios disponibles:**")
+    #     for _, user in users_df.iterrows():
+    #         email = user['email']
+    #         created = user['created_at'][:10] if user['created_at'] and str(user['created_at']) != 'nan' else 'N/A'
+    #         last_login = user['last_login'][:10] if user['last_login'] and str(user['last_login']) != 'nan' else 'Nunca'
             
-            st.sidebar.markdown(f"📧 {email}")
-            st.sidebar.markdown(f"   📅 Creado: {created}")
-            st.sidebar.markdown(f"   🔄 Último login: {last_login}")
-    else:
-        st.sidebar.info("No hay usuarios registrados")
+    #         st.sidebar.markdown(f"📧 {email}")
+    #         st.sidebar.markdown(f"   📅 Creado: {created}")
+    #         st.sidebar.markdown(f"   🔄 Último login: {last_login}")
+    # else:
+    #     st.sidebar.info("No hay usuarios registrados")
