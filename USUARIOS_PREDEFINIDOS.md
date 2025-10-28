@@ -2,15 +2,8 @@
 
 ## 🔐 Sistema de Acceso Restringido
 
-El sistema está configurado para usar **SOLO** estos dos usuarios predefinidos:
+El sistema está configurado para usar **SOLO** usuarios predefinidos:
 
-### 👤 Usuario Administrador
-- **Email:** `admin@test.com`
-- **Contraseña:** `admin123`
-
-### 👤 Usuario Regular
-- **Email:** `usuario@test.com`
-- **Contraseña:** `user456`
 
 ## ⚠️ Características del Sistema:
 
