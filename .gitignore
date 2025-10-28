@@ -1,19 +1,36 @@
+# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
 *.egg
 *.log
 
+# Environments
 .venv/
 venv/
 .env
 .env.*
 
+# OS
 .DS_Store
 Thumbs.db
 
+# Streamlit
 .streamlit/
 
+# IDE
 .vscode/
 .idea/
+
+# Database files (keep private)
+users.xlsx
+*.xlsx
+*.db
+*.sqlite
+
+# Temporary files
+create_users.py
+create_test_users.py
+convert_to_secrets.py
+users_data.json
 
